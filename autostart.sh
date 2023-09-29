@@ -2,7 +2,7 @@
 
 source /opt/ros/$ROS_DISTRO/setup.bash
 
-cd /catkin_ws && catkin_make
+cd /catkin_ws && catkin_make -j4
 
 source /catkin_ws/devel/setup.bash
 

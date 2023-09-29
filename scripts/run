@@ -5,7 +5,8 @@ set -e
 PROJECT_ROOT="$(cd "$(dirname "$0")"; cd ..; pwd)"
 source ${PROJECT_ROOT}/config.sh
 
-rocker --nvidia --x11 --name=${DOCKER_CONTAINER_NAME} \
+rocker --x11 --name=${DOCKER_CONTAINER_NAME} \
+    --devices /dev/dri \
     --volume ${PROJECT_ROOT}/shared:/shared \
     --volume ${PROJECT_ROOT}/src:/catkin_ws/src \
     --env TURTLEBOT3_MODEL=burger \
