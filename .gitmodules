@@ -1,7 +1,0 @@
-[submodule "src/turtlebot3_simulations"]
-	path = src/turtlebot3_simulations
-	url = https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
-	branch = noetic-devel
-[submodule "src/turtlebot3"]
-	path = src/turtlebot3
-	url = https://github.com/ROBOTIS-GIT/turtlebot3.git
