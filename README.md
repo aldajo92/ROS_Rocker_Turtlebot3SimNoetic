@@ -6,7 +6,7 @@ This repository contains the Dockerfile for the turtlebot3 simulation, using [Ro
 
 (Pending)
 
-### Mac OS (M1/M2 chip) ###
+## Mac OS (M1/M2 chip) ##
 
 Disclaimer: This process require to run with parallels desktop app. I'm not receiving any compensation for this recommendation. I just found it very useful for my work. If you have a better solution, I will be happy to hear it.
 
@@ -80,5 +80,6 @@ You should see somethin like follows:
 
 The above image has a configuration in the OS for the display with a resolution 2048x1152(16:9).
 
-## Autor
+
+## Autor ##
 Alejandro Daniel Jose Gómez Flórez - @aldajo92
