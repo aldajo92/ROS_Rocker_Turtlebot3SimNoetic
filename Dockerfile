@@ -17,5 +17,5 @@ RUN apt update && apt-get install -y ros-noetic-dynamixel-sdk ros-noetic-turtleb
 
 COPY ./autostart.sh /
 RUN chmod +x /autostart.sh
-ENTRYPOINT /autostart.sh
-# ENTRYPOINT ["bash"]
+
+ENTRYPOINT ["/ros_entrypoint.sh"]

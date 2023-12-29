@@ -5,9 +5,10 @@ set -e
 PROJECT_ROOT="$(cd "$(dirname "$0")"; cd ..; pwd)"
 source ${PROJECT_ROOT}/config.sh
 
-rocker --x11 --name=${DOCKER_CONTAINER_NAME} \
-    --devices /dev/dri \
+rocker --x11 \
+    --nvidia \
+    --name=${DOCKER_CONTAINER_NAME} \
     --volume ${PROJECT_ROOT}/shared:/shared \
     --volume ${PROJECT_ROOT}/src:/catkin_ws/src \
     --env TURTLEBOT3_MODEL=burger \
-    -- ${DOCKER_IMAGE_NAME}
+    -- ${DOCKER_IMAGE_NAME} /autostart.sh roslaunch turtlebot3_gazebo turtlebot3_world.launch
